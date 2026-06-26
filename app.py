@@ -10,7 +10,7 @@ app = FastAPI(title="Solar Sync Model API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["https://isro-frontend-p8oc.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
