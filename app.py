@@ -22,6 +22,13 @@ class SolarWindow(BaseModel):
     hard: List[float] = Field(..., min_length=60, max_length=60)
     mask: List[float] = Field(..., min_length=60, max_length=60)
 
+@app.get("/")
+def root():
+    return {
+        "message": "Solar Sync Backend is running",
+        "health": "/api/health",
+        "docs": "/docs"
+    }
 
 @app.get("/api/health")
 def health():
