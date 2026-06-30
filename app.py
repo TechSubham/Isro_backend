@@ -10,7 +10,7 @@ app = FastAPI(title="Solar Sync Model API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://isrobackend-production.up.railway.app"],
+    allow_origins=["https://isro-frontend-ruby.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
